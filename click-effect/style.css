@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(57, 41, 146);
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 450px;
+}
+
+.circle {
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  transition: transform 0.3s linear;
+  margin: 8px;
+  cursor: pointer;
+  transform: rotate(45deg);
+}
+
+.circle.grow {
+  transform: scale(2);
+}
